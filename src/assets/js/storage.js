@@ -35,7 +35,7 @@ export const getStore = (name, parse = false) => {
     if (!name) return false;
     name = PREFIX + name;
     if (parse) {
-        if (typeof(window.localStorage.getItem(name)) == "string" && window.localStorage.getItem(name) != "undefined") {
+        if (typeof (window.localStorage.getItem(name)) == "string" && window.localStorage.getItem(name) != "undefined") {
             return JSON.parse(window.localStorage.getItem(name))
         }
     }

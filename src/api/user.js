@@ -1,7 +1,10 @@
 import $http from '@/assets/js/http'
 import router from '@/router';
 import store from '@/store';
-import {checkResponse, createRoute} from "../assets/js/utils";
+import {
+    checkResponse,
+    createRoute
+} from "../assets/js/utils";
 
 export async function Login(data) {
     return $http.post('project/login', data);
@@ -12,11 +15,15 @@ export function register(data) {
 }
 
 export function getCaptcha(mobile) {
-    return $http.post('project/login/getCaptcha', {mobile: mobile});
+    return $http.post('project/login/getCaptcha', {
+        mobile: mobile
+    });
 }
 
 export function _getMailCaptcha(email) {
-    return $http.post('project/login/_getMailCaptcha', {email: email});
+    return $http.post('project/login/_getMailCaptcha', {
+        email: email
+    });
 }
 
 export function _resetPasswordByMail(data) {
@@ -26,7 +33,9 @@ export function _resetPasswordByMail(data) {
 export function changeCurrentOrganization(organization) {
     const organizationCode = organization.code;
     store.dispatch('setCurrentOrganization', organization);
-    return $http.post('project/index/changeCurrentOrganization', {organizationCode: organizationCode}).then(res=>{
+    return $http.post('project/index/changeCurrentOrganization', {
+        organizationCode: organizationCode
+    }).then(res => {
         if (checkResponse(res)) {
             store.dispatch('SET_MENU', res.data.menuList);
             store.dispatch('SET_USER', res.data.member);
@@ -64,11 +73,17 @@ export function list(data) {
 }
 
 export function forbid(accountCode) {
-    return $http.post('project/account/forbid', {accountCode: accountCode, status: 0});
+    return $http.post('project/account/forbid', {
+        accountCode: accountCode,
+        status: 0
+    });
 }
 
 export function resume(accountCode) {
-    return $http.post('project/account/resume', {accountCode: accountCode, status: 1});
+    return $http.post('project/account/resume', {
+        accountCode: accountCode,
+        status: 1
+    });
 }
 
 export function doAccount(data) {
@@ -80,19 +95,28 @@ export function doAccount(data) {
 }
 
 export function auth(id, auth) {
-    return $http.post('project/account/auth', {id: id, auth: auth});
+    return $http.post('project/account/auth', {
+        id: id,
+        auth: auth
+    });
 }
 
 export function del(accountCode) {
-    return $http.post('project/account/del', {accountCode: accountCode});
+    return $http.post('project/account/del', {
+        accountCode: accountCode
+    });
 }
 
 export function info($id) {
-    return $http.post('project/index/info', {id: $id});
+    return $http.post('project/index/info', {
+        id: $id
+    });
 }
 
 export function read(code) {
-    return $http.post('project/account/read', {code: code});
+    return $http.post('project/account/read', {
+        code: code
+    });
 }
 
 export function syncDetail(data) {
@@ -131,7 +155,9 @@ export function _checkBindMail(data) {
 }
 
 export function _joinByInviteLink(inviteCode) {
-    return $http.post('project/account/_joinByInviteLink', {inviteCode: inviteCode});
+    return $http.post('project/account/_joinByInviteLink', {
+        inviteCode: inviteCode
+    });
 }
 
 export function _checkLogin(data) {

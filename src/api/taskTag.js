@@ -13,5 +13,7 @@ export function edit(data) {
 }
 
 export function del(code) {
-    return $http.post('project/task_tag/delete', {tagCode: code});
+    return $http.post('project/task_tag/delete', {
+        tagCode: code
+    });
 }

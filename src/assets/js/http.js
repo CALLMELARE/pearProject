@@ -1,4 +1,4 @@
-import {message,} from 'ant-design-vue'
+import {message} from 'ant-design-vue'
 import Axios from "axios"
 import * as utils from './utils'
 import {getStore} from './storage'

@@ -1,4 +1,7 @@
-import {message,notification} from 'ant-design-vue'
+import {
+    message,
+    notification
+} from 'ant-design-vue'
 
 export const notice = (content, type = 'message', action = 'warning', duration = 3, placement = 'bottomLeft') => {
     destroyNotice();
@@ -39,7 +42,7 @@ export const destroyNotice = (type = '') => {
     if (!type) {
         message.destroy();
         notification.destroy();
-    }else{
+    } else {
         type === 'message' ? message.destroy() : notification.destroy();
     }
 };

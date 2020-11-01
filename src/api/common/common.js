@@ -9,7 +9,9 @@ export function checkInstall() {
 }
 
 export function inviteInfo(inviteCode) {
-    return $http.post('project/invite_link/_read', {inviteCode: inviteCode});
+    return $http.post('project/invite_link/_read', {
+        inviteCode: inviteCode
+    });
 }
 
 export function createInviteLink(data) {
@@ -18,7 +20,9 @@ export function createInviteLink(data) {
 
 
 export function notifyOverview(to) {
-    return $http.post('index/notify/listTypeFormat', {to: to});
+    return $http.post('index/notify/listTypeFormat', {
+        to: to
+    });
 }
 
 export function areasData() {
@@ -26,5 +30,7 @@ export function areasData() {
 }
 
 export function refreshAccessToken(refreshToken) {
-    return $http.post('index/index/refreshAccessToken', {refreshToken: refreshToken});
+    return $http.post('index/index/refreshAccessToken', {
+        refreshToken: refreshToken
+    });
 }
