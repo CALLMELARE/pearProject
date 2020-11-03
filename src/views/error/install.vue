@@ -1,6 +1,6 @@
 <template>
     <div class="install" style="height: 100%;">
-        <user-layout desc="正在安装Pear Project项目管理系统">
+        <user-layout desc="正在安装TWT项目管理系统">
             <div class="main">
                 <a-alert message="请确认已正确修改服务端目录下的.env配置文件"></a-alert>
                 <a-form

@@ -18,14 +18,14 @@
                     </div>
                 </div>
                 <div class="right-content">
-                    <!--<div class="content-item">
+                    <div class="content-item">
                         <div class="item-title muted">
                             任务数
                         </div>
                         <div class="item-text">
                             <span>{{task.total}}</span>
                         </div>
-                    </div>-->
+                    </div>
                     <div class="content-item">
                         <div class="item-title muted">
                             团队人数

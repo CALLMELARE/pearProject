@@ -33,7 +33,7 @@
             desc: {
                 type: [String],
                 default() {
-                    return '欢迎使用TWT Studio项目管理系统';
+                    return '项目管理系统';
                 }
             }
         }
@@ -59,7 +59,7 @@
             min-height: 100%;
             background: #f5f5f5 url(~@/assets/image/common/background.svg) no-repeat 50%;
             background-size: 100%;
-            padding: 110px 0 144px;
+            padding: 230px 0 144px;
             position: relative;
 
             a {

@@ -159,7 +159,7 @@
             <a-input
               class="prefix-input"
               size="large"
-              placeholder="如 Pear Project 可以设置为 EP"
+              placeholder="如 Project 可以设置为 EP"
               v-model="project.prefix"
               :disabled="!project.open_prefix"
             ></a-input>
