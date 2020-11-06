@@ -114,17 +114,17 @@
             :tab-bar-style="{ marginBottom: '24px', paddingLeft: '16px' }"
           >
             <div class="extra-wrapper" slot="tabBarExtraContent">
-              <div class="extra-item">
+              <!-- <div class="extra-item">
                 <a>今日</a>
                 <a>本周</a>
                 <a>本月</a>
                 <a>本年</a>
-              </div>
-              <a-range-picker :style="{ width: '256px' }" />
+              </div> -->
+              <!-- <a-range-picker :style="{ width: '256px' }" /> -->
             </div>
             <a-tab-pane forceRender tab="项目数" key="1">
               <a-row>
-                <a-col :xl="16" :lg="12" :md="12" :sm="24" :xs="24">
+                <a-col :xl="24" :lg="24" :md="24" :sm="24" :xs="24">
                   <div class="chart-wrappers-single">
                     <ve-histogram
                       :data="projectTotalData.chartData"
@@ -135,14 +135,14 @@
                     ></ve-histogram>
                   </div>
                 </a-col>
-                <a-col :xl="8" :lg="12" :md="12" :sm="24" :xs="24">
+                <!-- <a-col :xl="8" :lg="12" :md="12" :sm="24" :xs="24">
                   <rank-list title="项目数排行榜" :list="rankList" />
-                </a-col>
+                </a-col> -->
               </a-row>
             </a-tab-pane>
             <a-tab-pane forceRender tab="任务数" key="2">
               <a-row>
-                <a-col :xl="16" :lg="12" :md="12" :sm="24" :xs="24">
+                <a-col :xl="24" :lg="24" :md="24" :sm="24" :xs="24">
                   <div class="chart-wrappers-single">
                     <ve-histogram
                       :data="projectTotalData.chartData"
@@ -153,15 +153,15 @@
                     ></ve-histogram>
                   </div>
                 </a-col>
-                <a-col :xl="8" :lg="12" :md="12" :sm="24" :xs="24">
+                <!-- <a-col :xl="8" :lg="12" :md="12" :sm="24" :xs="24">
                   <rank-list title="任务数排行榜" :list="rankList" />
-                </a-col>
+                </a-col> -->
               </a-row>
             </a-tab-pane>
           </a-tabs>
         </div>
       </a-card>
-      <a-row :gutter="12">
+      <!-- <a-row :gutter="12">
         <a-col :xl="12" :lg="24" :md="24" :sm="24" :xs="24">
           <a-card
             :loading="loading"
@@ -221,12 +221,10 @@
                 </a-menu-item>
               </a-menu>
             </a-dropdown>
-            <p>card content</p>
-            <p>card content</p>
-            <p>card content</p>
+            <p>Developing...</p>
           </a-card>
         </a-col>
-      </a-row>
+      </a-row> -->
     </div>
   </div>
 </template>
